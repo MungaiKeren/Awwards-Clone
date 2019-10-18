@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .forms import SignUpForm
 
@@ -13,5 +13,11 @@ def index(request):
 
 
 def Registration(request):
-    form = SignUpForm()
-    return render(request, 'registration/signup.html', {"form":form})
+    if request.method == 'POST':
+        form = SignUpForm(request.POST)
+        if form.is_valid():
+            form.save()
+        return redirect('/')
+    else:
+        form = SignUpForm()
+    return render(request, 'registration/signup.html', {"form": form})
