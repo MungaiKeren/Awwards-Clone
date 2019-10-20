@@ -26,3 +26,9 @@ class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['pic', 'bio', 'contact_info']
+
+
+class PostProjectForm(forms.ModelForm):
+    class Meta:
+        model = Projects
+        fields = ['image', 'title', 'description', 'link']
