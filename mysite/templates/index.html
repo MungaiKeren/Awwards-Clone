@@ -6,7 +6,9 @@
         <div class="grid-sizer">
         {% for post in projects %}
         <div class="grid-item">
-            <img src="{{post.image.url}}" class="pl-2 pb-2"  alt="">
+            <a href="/project/{{post.id}}">
+            <img src="{{post.image.url}}" id="" class="pl-2 pb-2"  alt="">
+            </a>
         </div>
         {% empty %}
         <p>No projects have been posted</p>
