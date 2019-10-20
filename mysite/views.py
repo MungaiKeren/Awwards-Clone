@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from .forms import *
 from .models import Projects
 
@@ -24,3 +24,11 @@ def Registration(request):
     else:
         form = SignUpForm()
     return render(request, 'registration/signup.html', {"form": form})
+
+
+def single_page(request, project_id):
+    try:
+        project = Projects.objects.get(id=project_id)
+    except DoesNotExist:
+        raise Http404()
+    return render(request, 'project.html', {"project": project})

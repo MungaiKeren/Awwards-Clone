@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e4324d-d2c6-43bf-96ad-36e31476dda2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/OWL_Wild.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/sea_side.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/study.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/migrations/0003_auto_20191020_0841.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/keren.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/keren.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/templates/project.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,6 +24,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/media/profile_photo" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
