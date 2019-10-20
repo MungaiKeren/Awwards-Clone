@@ -38,6 +38,7 @@ def Profile(request):
     return render(request, 'profile.html', {"u_form": u_form, "p_form": p_form, "pics": pics})
 
 
+@login_required(login_url='/login/')
 def Registration(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
@@ -49,6 +50,7 @@ def Registration(request):
     return render(request, 'registration/signup.html', {"form": form})
 
 
+@login_required(login_url='/login/')
 def single_page(request, project_id):
     try:
         project = Projects.objects.get(id=project_id)
