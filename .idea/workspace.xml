@@ -2,6 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e4324d-d2c6-43bf-96ad-36e31476dda2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mysite/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Awwardsclone/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Awwardsclone/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Awwardsclone/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Awwardsclone/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/registration/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -57,7 +63,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
