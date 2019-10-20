@@ -12,9 +12,6 @@ class Profile(models.Model):
     def __str__(self):
         return f'{self.user.username} Profile'
 
-    class Meta:
-        db_table = 'profile'
-
 
 class Projects(models.Model):
     image = models.ImageField(upload_to='project_folder')
@@ -29,7 +26,6 @@ class Projects(models.Model):
         return f'{self.profile.user.username}'
 
     class Meta:
-        db_table = 'projects'
         ordering = ['-post_date']
 
     @classmethod
