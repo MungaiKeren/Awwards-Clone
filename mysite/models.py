@@ -29,5 +29,5 @@ class Projects(models.Model):
         return f'{self.profile.user.username}'
 
     class Meta:
-        db_table = 'images'
+        db_table = 'projects'
         ordering = ['-post_date']
