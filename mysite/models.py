@@ -32,3 +32,4 @@ class Projects(models.Model):
     def get_projects(cls):
         project = cls.objects.all()
         return project
+

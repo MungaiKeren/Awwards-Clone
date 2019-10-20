@@ -3,6 +3,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 from .forms import *
 from .models import Projects
+from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
 
 
@@ -67,9 +68,10 @@ def post_project(request):
 
 
 @login_required(login_url='/login/')
-def single_page(request, project_id):
+def get_project(request, project_id):
     try:
         project = Projects.objects.get(id=project_id)
+        print(project)
     except DoesNotExist:
         raise Http404()
     return render(request, 'project.html', {"project": project})

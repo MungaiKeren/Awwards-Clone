@@ -8,7 +8,7 @@ urlpatterns = [
     path('register/', views.Registration, name='register'),
     path('profile/', views.Profile, name='profile'),
     path('new_site/', views.post_project, name='new_site'),
-    path('images/(\d+)', views.single_page, name='single_page')
+    path('project/<int:project_id>', views.get_project, name='project')
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
