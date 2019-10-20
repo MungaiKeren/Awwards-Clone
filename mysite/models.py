@@ -7,6 +7,7 @@ class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     pic = models.ImageField(upload_to='profile_photo/', blank=True, default='profile_photo/sea_side.jpeg')
     bio = models.CharField(max_length=265, blank=True)
+    contact_info = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
         return f'{self.user.username} Profile'
@@ -15,10 +16,11 @@ class Profile(models.Model):
         db_table = 'profile'
 
 
-class Image(models.Model):
-    image = models.ImageField(upload_to='pic_folder')
-    name = models.CharField(max_length=255)
+class Projects(models.Model):
+    image = models.ImageField(upload_to='project_folder')
+    title = models.CharField(max_length=255)
     description = models.TextField()
+    link = models.CharField(max_length=200)
     post_date = models.DateTimeField(auto_now_add=True)
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, default='1')
     author = models.ForeignKey(User, on_delete=models.CASCADE, default='1')
