@@ -2,6 +2,8 @@
 {% block content %}
 {{block.super}}
 <div class="container">
+    <h4>{{user.username}}</h4>
+    <img src="{{ user.profile.pic.url}}" height="100px" width="100px" class="rounded-circle" alt="profile photo">
     <div class="grid">
         <div class="grid-sizer">
         {% for post in projects %}
