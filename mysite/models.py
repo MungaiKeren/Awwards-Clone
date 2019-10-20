@@ -31,3 +31,8 @@ class Projects(models.Model):
     class Meta:
         db_table = 'projects'
         ordering = ['-post_date']
+
+    @classmethod
+    def get_projects(cls):
+        project = cls.objects.all()
+        return project

@@ -2,10 +2,16 @@
 {% block content %}
 {{block.super}}
 <div class="container">
-    <h1 class="text-center">Welcome to awwards clone</h1>
-<button class="btn btn-sm btn-outline-info">Click Me!</button>
-<div class="display">
-    <p>I'm actually here</p>
-</div>
+    <div class="grid">
+        <div class="grid-sizer">
+        {% for post in projects %}
+        <div class="grid-item">
+            <img src="{{post.image.url}}" class="pl-2 pb-2"  alt="">
+        </div>
+        {% empty %}
+        <p>No projects have been posted</p>
+        {% endfor %}
+        </div>
+    </div>
 </div>
 {% endblock %}

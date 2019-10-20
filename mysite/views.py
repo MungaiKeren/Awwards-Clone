@@ -1,13 +1,16 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
-from .forms import SignUpForm
+from .forms import *
+from .models import Projects
 
 
 # Create your views here.
 def index(request):
     title = "Awwards-Clone"
+    projects = Projects.objects.all()
     context = {
         "title": title,
+        "projects": projects,
     }
     return render(request, 'index.html', context)
 
