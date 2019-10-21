@@ -22,14 +22,16 @@
         </div>
     </div>
         </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <h2>DETAILS</h2>
             <h4><span>Title</span> : {{project.title}}</h4>
             <h6><span>Description</span> : {{project.description}}</h6>
-            <h6><span>visit</span> : <a href="{{project.link}}">{{project.link|truncatechars:19}}</a></h6>
+            <h6><span>visit</span> : <a href="{{project.link}}" target="_blank">{{project.link|truncatechars:19}}</a></h6>
             <h4><span>Published</span> : {{project.post_date|date}}</h4>
             <h6><span>Author</span> : {{project.author|capfirst}}</h6>
+        </div>
+        <div class="col-md-">
+            Reviews and comments
         </div>
     </div>
 </div>

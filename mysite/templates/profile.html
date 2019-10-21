@@ -30,6 +30,7 @@
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-4">
+            {%if profile%}
             <h4>Name: {{user.username}}<br>
             <img src="{{ user.profile.pic.url}}" height="100px" width="100px" class="rounded-circle" alt="profile photo"><br>
             Bio: {{user.profile.bio}}<br>
@@ -81,5 +82,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 {% bootstrap_javascript %}
 <script src="{% static 'js/scripts.js' %}"></script>
+{%else%}
+<p>No profile set yet. <a href="">Edit here</a></p>
+{%endif%}
 {% endblock %}
 </html>

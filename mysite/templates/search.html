@@ -8,7 +8,9 @@
     {% endif %}
     {% if projects %}
     {% for project in projects %}
-    <img src="{{project.image.url}}" alt="searched image">
+    <a href="/project/{{project.id}}">
+    <img src="{{project.image.url}}" class="img-responsive" height="300px" width="400px" alt="searched image">
+    </a>
     {% empty %}
     <h4>There are no posts for this images.</h4>
     {% endfor %}

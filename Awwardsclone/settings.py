@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'Awwardsclone.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'awwards',
+        'NAME': 'projects',
         'USER': 'keren',
         'PASSWORD': 'kayren'
     }
