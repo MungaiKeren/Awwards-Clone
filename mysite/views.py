@@ -11,7 +11,6 @@ from django.contrib.auth.decorators import login_required
 def index(request):
     title = "Awwards-Clone"
     projects = Projects.get_projects()
-    current_user = request.user
     context = {
         "title": title,
         "projects": projects,
@@ -74,7 +73,10 @@ def get_project(request, project_id):
         print(project)
     except DoesNotExist:
         raise Http404()
-    return render(request, 'project.html', {"project": project})
+    params = {
+        "project": project,
+    }
+    return render(request, 'project.html', params)
 
 
 def search_results(request):

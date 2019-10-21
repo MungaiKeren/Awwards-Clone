@@ -32,3 +32,9 @@ class PostProjectForm(forms.ModelForm):
     class Meta:
         model = Projects
         fields = ['image', 'title', 'description', 'link']
+
+
+# class CommentForm(forms.ModelForm):
+#     class Meta:
+#         model = Comment
+#         fields = ['comment']
