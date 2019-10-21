@@ -75,3 +75,19 @@ def get_project(request, project_id):
     except DoesNotExist:
         raise Http404()
     return render(request, 'project.html', {"project": project})
+
+
+def search_results(request):
+    if 'projects' in request.GET and request.GET["projects"]:
+        search_term = request.GET.get('projects')
+        searched_projects = Projects.search_by_title(search_term)
+        message = f'{search_term}'
+
+        context = {
+            "message": message,
+            "projects": searched_projects
+        }
+        return render(request, 'search.html', context)
+    else:
+        message = "Search a project by title"
+        return render(request, 'search.html', {"message": message})
