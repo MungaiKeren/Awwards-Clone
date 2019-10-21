@@ -2,42 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e4324d-d2c6-43bf-96ad-36e31476dda2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/Snapchat-1593526157.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/Snapchat-1875374360.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/defaultprofile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/defaultprofile_Wk2PTL2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/me_IwlOGmb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/me_sBUi2ff.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/authentication.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/dev_plat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/eventer.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/preview.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/resp.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/responsive.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/responsive_fXrgSQZ.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/responsive_rC0VEtC.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/keren.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/keren.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/profile_photo/Baby_Road.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/project_folder/card-cols.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/project_folder/dev_plat_3cyF3gL.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysite/signals.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Awwardsclone/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Awwardsclone/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_photo/Fruity_food.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_photo/OWL_Wild.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_photo/Oled_landscape.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_photo/Oled_landscape_QtivPUj.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_photo/pizza_food.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/profile_photo/sea_side.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/project_folder/Road_pic.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/project_folder/sea_side.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/project_folder/study.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/project_folder/travel.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/migrations/0002_auto_20191020_0832.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/migrations/0003_auto_20191020_0841.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/migrations/0004_auto_20191020_1639.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/project.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/project.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/search.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
