@@ -5,6 +5,8 @@ from .forms import *
 from .models import Projects
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
+from rest_framework import viewsets
+from .serializers import ProfileSerializer
 
 
 # Create your views here.
