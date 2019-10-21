@@ -2,7 +2,6 @@ from django.core.exceptions import ObjectDoesNotExist
 from django.db import models
 from django.contrib.auth.models import User
 
-
 # Create your models here.
 from django.http import Http404
 
@@ -49,6 +48,17 @@ class Projects(models.Model):
     def search_by_title(cls, search_term):
         projects = cls.objects.filter(title__icontains=search_term)
         return projects
+
+
+class Reviews(models.Model):
+    design = models.PositiveSmallIntegerField(default=0)
+    usability = models.PositiveSmallIntegerField(default=0)
+    content = models.PositiveSmallIntegerField(default=0)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, default='1')
+    project = models.ForeignKey(Projects, on_delete=models.CASCADE, default='project_folder/responsive.jpg')
+
+    def __str__(self):
+        return f'{self.design}'
 
 #
 # class Comment(models.Model):

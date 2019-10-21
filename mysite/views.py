@@ -68,6 +68,7 @@ def post_project(request):
 
 @login_required(login_url='/login/')
 def get_project(request, project_id):
+    form = ReviewForm()
     try:
         project = Projects.objects.get(id=project_id)
         print(project)
@@ -75,6 +76,7 @@ def get_project(request, project_id):
         raise Http404()
     params = {
         "project": project,
+        "form": form
     }
     return render(request, 'project.html', params)
 
