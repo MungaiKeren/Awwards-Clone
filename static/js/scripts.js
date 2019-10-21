@@ -1,6 +1,8 @@
-$(document).ready(function(){
-    $('button').click(function(){
-        $('.display').fadeIn(2000)
-        $('button').hide()
-    })
-})
+function workout(){
+    design = document.getElementById("design").value;
+    usability = document.getElementById("use").value;
+    content = document.getElementById("content").value;
+
+    total_review = ((design+usability+content)/30)*100
+    return (Math.floor(total_review))
+}

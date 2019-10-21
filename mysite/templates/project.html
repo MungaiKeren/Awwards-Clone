@@ -34,12 +34,14 @@
         <div class="col-md-3">
             Rate/Review on a scale of 1-10
             <form action="" method="post" class="form-inline">
+                {%csrf_token%}
                 <label for="Design" value="">Design:</label>
                 <input type="number" id="design" maxlength="10" minlength="1" class="form-control">
                 <label for="Usability">Usability</label>
                 <input type="number" id="use" maxlength="10" minlength="1" class="form-control">
                 <label for="Content">Content</label>
                 <input type="number" id="content" maxlength="10" minlength="1" class="form-control">
+                <input type="submit" value="submit" class="btn btn-sm btn-info">
             </form>
             <p class="total">
 
