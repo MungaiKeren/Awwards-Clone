@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79e4324d-d2c6-43bf-96ad-36e31476dda2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/profile_photo/Baby_Road.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/card-cols.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/project_folder/dev_plat_3cyF3gL.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mysite/signals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/project_folder/preview_ObUNx9B.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/templates/registration/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/registration/signup.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
