@@ -6,10 +6,15 @@ from .models import Projects
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
 from rest_framework import viewsets
-from .serializers import ProfileSerializer
+from .serializers import ProjectSerializer
 
 
 # Create your views here.
+class ProjectView(viewsets.ModelViewSet):
+    queryset = Projects.objects.all()
+    serializer_class = ProjectSerializer
+
+
 def index(request):
     title = "Awwards-Clone"
     projects = Projects.get_projects()
