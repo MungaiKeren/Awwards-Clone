@@ -8,6 +8,7 @@ from django.contrib.auth.decorators import login_required
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from .serializers import ProjectSerializer, ProfileSerializer
+import datetime as dt
 
 
 # Create your views here.
@@ -31,9 +32,11 @@ class ProjectView(APIView):
 def index(request):
     title = "Awwards-Clone"
     projects = Projects.get_projects()
+    today = dt.datetime.today()
     context = {
         "title": title,
         "projects": projects,
+        "today": today
     }
     return render(request, 'index.html', context)
 
