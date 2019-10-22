@@ -5,14 +5,17 @@ from .forms import *
 from .models import Projects
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
-from rest_framework import viewsets
+from rest_framework.views import APIView
+from rest_framework.response import Response
 from .serializers import ProjectSerializer
 
 
 # Create your views here.
-class ProjectView(viewsets.ModelViewSet):
-    queryset = Projects.objects.all()
-    serializer_class = ProjectSerializer
+class ProjectView(APIView):
+    def get(self, request, format=None):
+        projects = Projects.objects.all()
+        serializer = ProjectSerializer(projects, many=True)
+        return Response(serializer.data)
 
 
 def index(request):

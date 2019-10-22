@@ -5,8 +5,6 @@ from django.conf.urls.static import static
 from rest_framework import routers
 from rest_framework.authtoken.views import obtain_auth_token
 
-router = routers.DefaultRouter()
-router.register('projects', views.ProjectView)
 
 urlpatterns = [
     path('', views.index, name='index'),
@@ -15,7 +13,7 @@ urlpatterns = [
     path('new_site/', views.post_project, name='new_site'),
     path('project/<int:project_id>', views.get_project, name='project'),
     path('search/', views.search_results, name='search'),
-    path('api/', include(router.urls)),
+    path('api/projects/', views.ProjectView.as_view()),
     path('api_token_auth/', obtain_auth_token)
 ]
 if settings.DEBUG:
