@@ -13,7 +13,12 @@ class Profile(models.Model):
     contact_info = models.CharField(max_length=255, blank=True)
 
     def __str__(self):
-        return f'{self.user.username} Profile'
+        return self.bio
+
+    @classmethod
+    def get_profiles(cls):
+        profile = cls.objects.all()
+        return profile
 
 
 class Projects(models.Model):

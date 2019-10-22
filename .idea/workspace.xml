@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="79e4324d-d2c6-43bf-96ad-36e31476dda2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mysite/templates/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/templates/navbar.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mysite/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/views.py" afterDir="false" />
     </list>
@@ -13,6 +13,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Awwards-Clone" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

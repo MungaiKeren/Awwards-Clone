@@ -2,15 +2,25 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 from django.http import HttpResponse, Http404
 from .forms import *
-from .models import Projects
+from .models import *
 from django.core.exceptions import ObjectDoesNotExist
 from django.contrib.auth.decorators import login_required
 from rest_framework.views import APIView
 from rest_framework.response import Response
-from .serializers import ProjectSerializer
+from .serializers import ProjectSerializer, ProfileSerializer
 
 
 # Create your views here.
+class ProfileView(APIView):
+    def get(self, request):
+        profiles = Profile.get_profiles()
+        serializer = ProfileSerializer(profiles, many=True)
+        data = {
+            'data': serializer.data
+        }
+        return Response(data)
+
+
 class ProjectView(APIView):
     def get(self, request, format=None):
         projects = Projects.objects.all()
