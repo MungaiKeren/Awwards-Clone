@@ -57,13 +57,13 @@ Fork the repo
 * Push your changes so we can have a view!
 
 # Live development
-Currently the app is deployed to heroku. You can find it [here]()
+Currently the app is deployed to heroku. You can find it [here](https://awwords.herokuapp.com/)
 
 ## Known Bugs
 
 
 ## Visual Representation
-<img src="" height = "400px">
+<img src="https://github.com/MungaiKeren/My-Shoe-images/blob/master/awward2.png?raw=true" height = "400px">
 
 ### LICENSE
-[MIT]()
+[MIT](https://github.com/MungaiKeren/Awwards-Clone/blob/master/LICENSE)
