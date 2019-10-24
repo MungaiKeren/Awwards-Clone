@@ -14,6 +14,7 @@
         background-repeat:no-repeat;
         background-size:cover;
         background-position: center;
+        border-radius:1%;
         background-color: #5f6769;
     }
     form{
@@ -22,6 +23,17 @@
     button{
         border-radius:50%;
     }
+    .overlay{
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+    .overlay:hover{
+
+    }
 </style>
 <div class="container mt-3">
         <div class="card-header" style="background:white;">
@@ -29,7 +41,9 @@
             {{project.description}}
         </div>
         <div class="card-title">
-            <div class="overlay">
+
+        </div>
+        <div class="text-center">
                 <a href="{{project.link}}" target="_blank">
                     <button type="button" class="btn btn-sm btn-outline-success btn-rounde waves-effect">
                         Visit
@@ -38,7 +52,6 @@
                 {{project.post_date|date}}
                 By: {{project.author|capfirst}}
             </div>
-        </div>
         </div>
         <div class="container-fluid">
             <hr>
