@@ -62,7 +62,6 @@ def Profile(request):
     return render(request, 'profile.html', {"u_form": u_form, "p_form": p_form, "pics": pics})
 
 
-@login_required(login_url='/login/')
 def Registration(request):
     if request.method == 'POST':
         form = SignUpForm(request.POST)
