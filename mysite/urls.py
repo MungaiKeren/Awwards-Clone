@@ -15,7 +15,8 @@ urlpatterns = [
     path('search/', views.search_results, name='search'),
     path('api/projects/', views.ProjectView.as_view()),
     path('profile_api/', views.ProfileView.as_view()),
-    path('api_token_auth/', obtain_auth_token)
+    path('api_token_auth/', obtain_auth_token),
+    path('ratings/', include('star_ratings.urls', namespace='ratings')),
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,59 +1,50 @@
 {%extends 'base.html'%}
 {% load crispy_forms_tags %}
+{% load ratings %}
 {%block content%}
 {{block.super}}
 <style>
-    .card{
-        width:100%;
-    }
     span{
         text-decoration:underline;
         font-size:29px;
     }
+    .card-title{
+        background-image: url('{{project.image.url}}');
+        height:700px;
+        background-repeat:no-repeat;
+        background-size:cover;
+        background-position: center;
+        background-color: #5f6769;
+    }
     form{
         padding:5px;
     }
+    button{
+        border-radius:50%;
+    }
 </style>
 <div class="container mt-3">
-    <div class="row">
-        <div class="col-md-5">
-        <div class="card">
         <div class="card-header" style="background:white;">
-            <h4 class="">{{project.title}}</h4>
+            <h1 class="text-center">{{project.title}}</h1>
+            {{project.description}}
         </div>
-        <div class="card-title" style="padding:10px;">
-            <img src="{{project.image.url}}" width="100%" class="img-responsive" alt="">
+        <div class="card-title">
+            <div class="overlay">
+                <a href="{{project.link}}" target="_blank">
+                    <button type="button" class="btn btn-sm btn-outline-success btn-rounde waves-effect">
+                        Visit
+                    </button>
+                </a>
+                {{project.post_date|date}}
+                By: {{project.author|capfirst}}
+            </div>
         </div>
-    </div>
         </div>
-        <div class="col-md-4">
-            <h2>DETAILS</h2>
-            <h4><span>Title</span> : {{project.title}}</h4>
-            <h6><span>Description</span> : {{project.description}}</h6>
-            <h6><span>visit</span> : <a href="{{project.link}}" target="_blank">{{project.link|truncatechars:19}}</a></h6>
-            <h4><span>Published</span> : {{project.post_date|date}}</h4>
-            <h6><span>Author</span> : {{project.author|capfirst}}</h6>
+        <div class="container-fluid">
+            <hr>
+            <h1 class="text-center">Reviews and rates</h1>
+            <h1 class="text-center">{% ratings project %}</h1>
         </div>
-        <div class="col-md-3">
-            Rate/Review on a scale of 1-10
-            <form action="" method="post" class="form-inline">
-                {%csrf_token%}
-                {{form|crispy}}
-                <input type="submit" onclick="workout()" value="submit" class="btn btn-sm btn-info">
-            </form>
-            <p class="total">
 
-            </p>
-            <script>
-            function workout(){
-                design = document.getElementById("design").value;
-                usability = document.getElementById("use").value;
-                content = document.getElementById("content").value;
-                total_review = ((design+usability+content)/30)*100
-                return (Math.floor(total_review))
-            }
-            </script>
-        </div>
-    </div>
 </div>
 {% endblock %}
