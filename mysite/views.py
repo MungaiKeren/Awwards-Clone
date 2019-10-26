@@ -4,6 +4,8 @@ from django.http import HttpResponse, Http404
 from .forms import *
 from .models import *
 from django.core.exceptions import ObjectDoesNotExist
+from django.conf import settings
+from django.views.defaults import page_not_found
 from django.contrib.auth.decorators import login_required
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -117,3 +119,11 @@ def search_results(request):
     else:
         message = "Search a project by title"
         return render(request, 'search.html', {"message": message})
+
+
+# def handler_404(request, exception):
+#     return page_not_found(request, exception, template_name="error_404.html")
+#
+#
+# def handler_500(request):
+#     return page_not_found(request, template_name="error_500.html")
