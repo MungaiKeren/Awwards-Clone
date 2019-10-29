@@ -21,7 +21,7 @@ You need to have the following installed:
 * Pip ```curl https://bootstrap.pypa.io/get-pip|python```
 * Virtual ```$ python3.6 -m venv pip virtual```
 * Activate the virtual environment ```source virtual/bin/activate```
-* Django 1.11.5 ```(virtual)$ pip install django==1.11.5```
+* Django==2.2.6 ```(virtual)$ pip install Django==2.2.6```
 * Get all requirements ```pip freeze > requirements.txt```
 
 ### Running the server
