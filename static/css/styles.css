@@ -33,3 +33,7 @@ display: none;
       transform: rotate(1800deg);
     }
   }
+
+  form{
+    margin-left: 20%;
+  }

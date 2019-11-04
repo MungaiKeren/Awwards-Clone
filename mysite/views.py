@@ -11,24 +11,20 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .serializers import ProjectSerializer, ProfileSerializer
 import datetime as dt
+from rest_framework import viewsets
 
 
 # Create your views here.
-class ProfileView(APIView):
-    def get(self, request):
-        profiles = Profile.get_profiles()
-        serializer = ProfileSerializer(profiles, many=True)
-        data = {
-            'data': serializer.data
-        }
-        return Response(data)
-
-
 class ProjectView(APIView):
     def get(self, request, format=None):
         projects = Projects.objects.all()
         serializer = ProjectSerializer(projects, many=True)
         return Response(serializer.data)
+
+
+class ProfileView(viewsets.ModelViewSet):
+    queryset = Profile.objects.all()
+    serializer_class = ProfileSerializer
 
 
 def index(request):
@@ -119,7 +115,6 @@ def search_results(request):
     else:
         message = "Search a project by title"
         return render(request, 'search.html', {"message": message})
-
 
 # def handler_404(request, exception):
 #     return page_not_found(request, exception, template_name="error_404.html")
