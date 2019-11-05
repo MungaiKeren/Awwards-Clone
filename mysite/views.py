@@ -11,7 +11,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from .serializers import ProjectSerializer, ProfileSerializer
 import datetime as dt
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 
 
 # Create your views here.
@@ -25,6 +25,7 @@ class ProjectView(APIView):
 class ProfileView(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
+    permission_classes = (permissions.IsAuthenticatedOrReadOnly,)
 
 
 def index(request):
